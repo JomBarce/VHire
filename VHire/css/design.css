@@ -1,0 +1,853 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    color: white;
+}
+
+body{
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 14px;
+}
+
+label{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+
+form{
+    display: grid;
+    width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+th{
+    text-align: left;
+    padding: 10px;
+}
+
+td{
+    text-align: center;
+    padding: 8px;
+}
+
+ul{
+    list-style-type: none;
+    width: 100%;
+    margin-top: 20px;
+}
+  
+li a{
+    display: block;
+    color: white;
+    padding: 25px 0;
+    padding-left:25px;
+    font-size: 20px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: red;
+}
+
+select{
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    width: 78%;
+}
+select:focus{
+    border: 2px solid black;
+}
+
+input{
+    font-size: 1.1rem;
+    background-color: white;
+    padding: .8rem;
+    border-radius: .5rem;
+    border: 2px solid rgb(179, 179, 179);
+    outline: none;
+}
+input:focus{
+    border: 2px solid black;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button{
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: #000080;
+    padding: 0.8rem;
+    border-radius: .5rem;
+    border-color: black;
+    margin-top: 1rem;
+}
+button:hover{
+    background-color: #00009e;
+}
+button:active{
+    background-color: #000057;
+}
+
+#header{
+    height: 70px;
+    width: 100%;
+    background-color: #000080;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu{
+    margin-left: 30px;
+    width: 50px;
+}
+#menu:hover{
+    cursor: pointer;
+    content:url("./images/icons/menu2.png");
+}
+
+#logo{
+    margin-right: 30px;
+    width: 300px;
+}
+#logo:hover{
+    cursor: pointer;
+}
+
+#loginlogo{
+    width: 700px;
+}
+
+#icon{
+    width: 400px;
+    text-align: center;
+}
+
+#icon_input{
+    width: 30px;
+}
+
+#loginform{
+    margin: 1.5rem 0;
+    gap: 1rem;
+}
+
+#fileins{
+    font-size: 1.1rem;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    border: 2px dashed rgb(179, 179, 179);
+    outline: none; 
+    text-align: center;
+    color: #000080;
+}
+
+#left{
+    display: none;
+    flex: 1.5;
+    flex-direction: column;
+    background-color: #000080;
+    align-items: center;
+}
+
+#right{
+    flex: 10.5;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 100vh;
+    height: 100%;
+}
+
+#right_left{
+    flex: 8;
+    padding: 0 5rem;
+    text-align: left;
+}
+
+#right_right{
+    flex: 4;
+    padding-right: 5rem;
+    text-align: left;
+}
+#right_right h2{
+    color: #000080;
+}
+#right_right p{
+    color: #000080;
+}
+
+#time{
+    width: 89%;
+}
+
+#terminal{
+    width: 100%;
+}
+
+#signupform input{
+    width: 96%;
+}
+#signupform label{
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+#vehicleform label{
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+#vhire{
+    margin-top: 4rem;
+    border: 2px solid #000080;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 150px;
+}
+
+#dot{
+    margin-top: 2rem;
+    width: 50px;
+}
+
+#profileform{
+    gap: 10px;
+}
+#profileform h1{
+    color: #000080;
+    padding: 10px;
+}
+#profileform label{
+    color: #000080;
+}
+
+#imageform{
+    display: none;
+    margin-top: 30px;
+    gap: 10px;
+    text-align: left;
+}
+
+#p_picture{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 7px solid rgb(235, 235, 235);
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+#edit_btn{
+    width: 10%;
+    height: 30px;
+    background-color: #000080;
+    padding: 0;
+}
+#edit_btn:hover{
+    background-color: #00009e;
+}
+#edit_btn:active{
+    background-color: #000057;
+}
+
+#profileform{
+    border-top: 2px solid #a1a1a1;
+    border-bottom: 2px solid #a1a1a1;
+    padding: 20px 0;
+}
+
+#profileform_btn{
+    display: none;
+}
+
+#adminform input{
+    width: 96%;
+}
+#adminform label{
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+#ticket_confirm{
+    padding: 0 100px;
+}
+
+#ticket_cancel{
+    padding: 0 100px;
+}
+
+.divider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.center{
+    max-width: 700px;
+    display: grid;
+    padding: 2rem;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.center2{
+    max-width: 700px;
+    display: grid;
+    padding: 2rem;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.center3{
+    max-width: 1500px;
+    padding: 2rem;
+    align-items: center;
+    width: 100%;
+}
+.center3 button{
+    background-color: red;
+    padding: 3px;
+    font-weight: bold;
+    border: none;
+    margin-top: 0;
+}
+.center3 button:hover{
+    background-color: #c20c00;
+}
+.center3 button:active{
+    background-color: #ff4c40;
+}
+
+.center4{
+    max-width: 1500px;
+    padding: 2rem;
+    align-items: center;
+    width: 100%;
+}
+.center4 button{
+    background-color: red;
+    width: 100%;
+    margin: 5px;
+    padding: 1rem;
+    font-weight: bold;
+    border: none;
+}
+.center4 button:hover{
+    background-color: #c20c00;
+}
+.center4 button:active{
+    background-color: #ff4c40;
+}
+.center4 table{
+    color: white;
+    margin: 0;
+}
+.center4 td{
+    text-align: left;
+    padding: 8px;
+    color: white;
+}
+
+.center5{
+    max-width: 700px;
+    display: grid;
+    padding: 2rem;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 4rem;
+    background-color: yellow;
+}
+.center5 label{
+    text-align: left;
+}
+
+.center6{
+    display: grid;
+    padding: 2rem;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+}
+.center6 th{
+    color: #000080;
+}
+
+.button_div{
+    margin-top: 2rem;
+}
+
+.center_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    display: block;
+}
+.title h1{
+    color: #000080;
+}
+
+.title2{
+    margin-top: 2rem;
+    text-align: left;
+}
+.title2 h1{
+    color: red;
+}
+
+.title3{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.title3 h1{
+    color: black;
+}
+
+.question{
+    margin-top: 4rem;
+    text-align: center;
+}
+.question h1{
+    color: rgb(170, 138, 90);
+    font-size: 3rem;
+}
+
+.form_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form_div button{
+    background-color: #000080;
+    margin-left: 2rem;
+    width: 50%;
+}
+.form_div button:hover{
+    background-color: #00009e;
+}
+.form_div button:active{
+    background-color: #000057;
+}
+
+.form_div2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form_div2 label{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.form_div3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    background-color: rgb(224, 224, 224);
+}
+
+.search_form{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.select_div{
+    left: 0px;
+    top: 0px;
+    text-align: right;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.select_div2{
+    left: 0px;
+    top: 0px;
+    text-align: right;
+    width: 100%;
+}
+
+.radio_div{
+    left: 0px;
+    top: 0px;
+    text-align: left;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.link{
+    text-decoration: underline;
+    color: blue;
+}
+
+.center_route{
+    padding: 2rem;
+}
+.center_route h2{
+    color: red;
+}
+.center_route button{
+    width: 50%;
+}
+
+.input2{
+    margin-right: 10px;
+}
+
+.input3{
+    width: 80%;
+}
+
+.input4{
+    width: 78%;
+}
+
+.table_left{
+    margin: 0;
+    padding: 0;
+}
+.table_left td{
+    text-align: left;
+    font-size: 20px;
+    width: 33%;
+}
+
+.table_div table{
+    margin: 0;
+    padding: 0;
+    table-layout:inherit;
+}
+.table_div th{
+    color: white;
+    background-color: #000080;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+}
+.table_div td{
+    text-align: left;
+    color: #000080;
+    font-size: 1rem;
+}
+
+.table_div2{
+    margin-top: 3rem;
+}
+.table_div2 th{
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.table_div2 td{
+    text-align: left;
+    color: #000080;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-top: 2px solid #000080;
+}
+.table_div2 th{
+    color: white;
+    background-color: #000080;
+    text-align: left;
+    padding: 10px;
+}
+.table_div2 input{
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 0.5rem;
+    border: 1px solid rgb(179, 179, 179);
+    outline: none;
+    width: 20%;   
+}
+
+.table_div3 h2{
+    color: #000080;
+    margin:0;
+}
+.table_div3 table{
+    margin: 0;
+    padding: 0;
+    table-layout:inherit;
+}
+.table_div3 th{
+    color: #000080;
+    text-align: left;
+}
+.table_div3 td{
+    text-align: left;
+    color: #000080;
+    font-size: 1rem;
+}
+.table_div3 button{
+    padding: 3px;
+    width: 30%;
+    margin: 0;
+}
+.table_div3 .t_other{
+    text-align: center;
+}
+
+.table_div4 table{
+    margin: 0;
+    padding: 0;
+    table-layout:inherit;
+}
+.table_div4 th{
+    color: white;
+    background-color: #000080;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+}
+.table_div4 td{
+    text-align: left;
+    color: #000080;
+    font-size: 1rem;
+    border-bottom: 2px solid #000080;
+}
+
+.td_location{
+    width: 35%;
+}
+
+.td_bold{
+    font-weight: bold;
+}
+
+.td_other{
+    width: 25%;
+}
+
+.td_others{
+    width: 15%;
+}
+
+.t_other{
+    width: 10%;
+}
+
+.t_others{
+    width: 5%;
+}
+
+.left_td2{
+    width: 50%;
+}
+
+.optionlogo{
+    width: 450px;
+}
+.optionlogo:hover{
+    width: 500px;
+}
+
+.button_blue button{
+    background-color: #000080;
+    font-size: 1.5rem;
+    width: 22%;
+    padding: .5rem;
+    border: 2px solid black;
+    font-weight: normal;
+}
+.button_blue button:hover{
+    background-color: #00009e;
+}
+.button_blue button:active{
+    background-color: #000057;
+}
+
+.result_button button{
+    width: 30%;
+}
+
+.right_equal h2{
+    color:red;
+}
+
+.ticket{
+    padding-bottom: 2rem;
+    border-bottom: 5px dashed #000080;
+}
+
+.ticket_img{
+    display: inline-block;
+}
+
+.ticket_details{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.ticket_gap{
+    padding: 30px 0;
+}
+
+.divScroll{
+    background-color:#33B5FF;
+    overflow-y:scroll;
+    height: 650px;
+}
+.divScroll table{
+    text-align: center;
+}
+.divScroll th{
+    text-align: center;
+    color: #000080;
+}
+.divScroll td{
+    text-align: center;
+    color: #000080;
+}
+
+.button1{
+    background-color: #000080;
+    border: none;
+}
+
+.button2{
+    background-color: #f3fc7a;
+    width: 100%;
+    color: #000080;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+.button2:hover{
+    background-color: #58c0fc;
+}
+.button2:active{
+    background-color:#33B5FF;
+}
+
+.button_disabled{
+    background-color: #888888;
+    border: none;
+    pointer-events:none;
+}
+
+.header_title{
+    margin-left: 2rem;
+}
+
+.active{
+    background-color: #33B5FF;
+}
+
+input[type=radio]{
+    width: 20px;
+    height: 20px;
+}
+
+.radio-label label {
+    color:#00203FFF;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.menu_picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(235, 235, 235);
+    object-fit: cover;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+.user_profile{
+    display: flex;
+    align-items:center;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.user_profile img{
+    margin-left: 300px;
+    margin-right: 100px;
+    float: left;
+    vertical-align: middle;
+}
+.user_profile h1{
+    color: black;
+    font-size: 50px;
+    margin-bottom: 20px;
+    float: right;
+}
+.user_profile h2{
+    color: rgb(51, 51, 51);
+    font-size: 30px;
+}
+
+.profile_text{
+    text-align: left;
+    font-size: 28px;
+    margin: 10px 0;
+    color: #000080;
+}
+
+.cancel_btn{
+    background-color: red;
+}
+.cancel_btn:hover{
+    background-color: #c20c00;
+}
+.cancel_btn:active{
+    background-color: #ff4c40;
+}
+
+.cards {
+    margin: 50px auto;
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 50px;
+    justify-items: center;
+}
